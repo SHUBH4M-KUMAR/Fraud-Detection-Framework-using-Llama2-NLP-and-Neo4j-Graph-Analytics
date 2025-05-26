@@ -7,17 +7,17 @@ This project is a hybrid AI-based fraud detection system that combines **Llama2*
 
 ## 🔍 Features
 
-- 🤖 Llama2-based NLP model translates natural language queries into Cypher queries.
-- 🌐 Neo4j graph database represents and queries relationships between accounts, transactions, and behaviors.
-- 🔎 Detects fraud patterns in `TRANSFER`, `CASH_OUT`, `CASH_IN`, and `PAYMENT` types.
-- 📊 Streamlit app for live interaction, visualization, and fraud report generation.
-- 🌈 Interactive PyVis network graph highlighting suspicious nodes in red.
+-  Llama2-based NLP model translates natural language queries into Cypher queries.
+-  Neo4j graph database represents and queries relationships between accounts, transactions, and behaviors.
+-  Detects fraud patterns in `TRANSFER`, `CASH_OUT`, `CASH_IN`, and `PAYMENT` types.
+-  Streamlit app for live interaction, visualization, and fraud report generation.
+-  Interactive PyVis network graph highlighting suspicious nodes in red.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Llama2 (via HuggingFace T5 model)** – Natural Language to Cypher generation
+- **Llama2 ** – Natural Language to Cypher generation
 - **Neo4j** – Graph database for storing and querying transactions
 - **Streamlit** – Frontend UI for user input and results
 - **PyVis** – Visualization of transaction graphs
@@ -63,8 +63,8 @@ Place your CSV file in Neo4j's import directory and run the Cypher query above.
 ### 3. Configure Llama2 Model
 Edit paths in your script to point to the correct:
 ```python
-saved_model_path = "path/to/your/t5-model"
-saved_tokenizer_path = "path/to/your/t5-tokenizer"
+saved_model_path = "path/to/your/model"
+saved_tokenizer_path = "path/to/your/tokenizer"
 ```
 
 ### 4. Run the Streamlit App
