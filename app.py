@@ -6,8 +6,8 @@ import re
 from pyvis.network import Network
 
 # Load the saved T5 model and tokenizer
-saved_model_path = r"C:\Users\shubh\Downloads\Graph -20240430T091747Z-001\Graph"
-saved_tokenizer_path = r"C:\Users\shubh\Downloads\Graph -20240430T091747Z-001\Graph"
+saved_model_path = r"Graph"
+saved_tokenizer_path = r"Graph"
 
 model = T5ForConditionalGeneration.from_pretrained(saved_model_path)
 tokenizer = T5Tokenizer.from_pretrained(saved_tokenizer_path)
